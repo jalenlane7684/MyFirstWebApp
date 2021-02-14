@@ -16,3 +16,32 @@ div {
     background-color: yellow;
     border-color: orange;
 }
+
+.btn {
+    border: none; /*Removes Borders*/
+    color: white; /*Text color*/
+    padding: 14px 28px; /*Padding*/
+    cursor: pointer;
+}
+
+.info {background-color: blue;}
+.info:hover {background-color: deepskyblue;}
+
+.warning {background-color: orange;}
+.warning:hover {background-color: darkorange;}
+
+.danger {
+    background-color: red;
+}
+
+.danger:hover {
+    background-color: darkred;
+}
+
+.success {
+    background-color: green;
+}
+
+.success:hover{
+    background-color:darkgreen;
+}

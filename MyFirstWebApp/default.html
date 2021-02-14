@@ -10,18 +10,53 @@
     <p>My name is Jalen and I am teaching you C#!</p>
     <p>If you want more information about C#, <a href="https://microsoft.com" target="_blank">you can visit the webpage of Microsoft.</a></p>
 
-    <img src="https://cdn.pixabay.com/photo/2020/09/02/20/52/dock-5539524__340.jpg" />
+    <img id="mysteryImage" src="https://cdn.pixabay.com/photo/2020/09/02/20/52/dock-5539524__340.jpg" />
     <div>Be careful...C# is a great programming language that everyone should learn!</div>
     <div class="superblock">
         Especially if you want to be a TOP programmer!
     </div>
 
-    <button type="button" onclick="document.getElementById('date').innerHTML = Date()">
+    <button class="btn info" type="button" onclick="document.getElementById('date').innerHTML = Date()">
         Click the Button to see the Date
     </button>
 
     <p id="date">
         This will change...after you click the button!
     </p>
+
+    <button class="btn warning" type="button" onclick="NewDemoFunction()">
+        Click the Button to see a demo.
+    </button>
+
+    <div id="superdemo">
+        This text is a mystery...click the button to reveal a secret message!
+    </div>
+
+    <button class="btn danger" type="button" onclick="Light(1)">
+        DO NOT CLICK ME!
+    </button>
+
+    <button class="btn success" type="button" onclick="Light(0)">
+        DO NOT CLICK ME AGAIN!
+    </button>
+
+    <script>
+        function NewDemoFunction() {
+            document.getElementById("superdemo").innerHTML = "Hello Super User! The secret message is start smiling and be happy!";
+        }
+
+        function Light(sw) {
+            var light_photo;
+            if (sw == 0) {
+                light_photo = "Light_Off.jpg";
+            }
+            else {
+                light_photo = "Light_On.jpg";
+            }
+            document.getElementById("mysteryImage").src = light_photo;
+        }
+    </script>
+
+
 </body>
 </html>
